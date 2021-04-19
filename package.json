@@ -1,0 +1,40 @@
+{
+  "name": "testing-with-cypress",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "core-js": "^2.5.7",
+    "raf": "^3.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "todomvc-app-css": "^2.4.0",
+    "use-onclickoutside": "^0.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.6",
+    "cypress": "^7.2.0",
+    "serve": "^11.3.2",
+    "start-server-and-test": "^1.12.1"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "start-server-and-test start 5000 cypress",
+    "cypress": "cypress run"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
